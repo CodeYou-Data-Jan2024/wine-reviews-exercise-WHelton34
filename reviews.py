@@ -8,5 +8,5 @@ country_summary = df.groupby('country').agg(
 ).reset_index()
 country_summary['points'] = country_summary['points'].round(1)
 output_file_path = r'C:\Users\willi\wine-reviews-exercise-WHelton34\data\reviews-per-country.csv'
-summary.to_csv(output_file_path, index=False)
-print(f'Summary data written to {output_file_path}')
+summary.to_csv('data/reviews-per-country.csv', index=False)
+print("Summary data has been written to 'data/reviews-per-country.csv'")
